@@ -1,0 +1,128 @@
+/* Fade In Animation */
+
+@keyframes fadeUp{
+
+0%{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.hero-content{
+
+animation:fadeUp 1.2s ease;
+
+}
+
+/* Floating Logo */
+
+.logo{
+
+animation:floatLogo 4s ease-in-out infinite;
+
+}
+
+@keyframes floatLogo{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-4px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+/* Buttons */
+
+.btn{
+
+transition:.35s ease;
+
+}
+
+.btn:hover{
+
+transform:translateY(-6px);
+
+}
+
+/* Social Icons */
+
+.socials a{
+
+transition:.35s ease;
+
+}
+
+.socials a:hover{
+
+transform:translateY(-8px) scale(1.1);
+
+}
+/*============================
+Moving Blur
+============================*/
+
+@keyframes moveGlow{
+
+0%{
+
+transform:translate(0,0);
+
+}
+
+100%{
+
+transform:translate(80px,-80px);
+
+}
+
+}
+
+/*============================
+Scroll Animation
+============================*/
+
+@keyframes scrollDown{
+
+0%{
+
+opacity:1;
+
+transform:translate(-50%,0);
+
+}
+
+100%{
+
+opacity:0;
+
+transform:translate(-50%,16px);
+
+}
+
+}
